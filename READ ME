@@ -1,0 +1,24 @@
+
+	Universidade Federal de Pelotas
+	Ciência da Computação - CDTec
+
+	Aluno: William Dalmorra de Souza
+	Matrícula: 11100360
+
+Para compilar / executar basta entrar no diretório dos arquivos .h, .cpp e makefile e digitar as seguintes comandos:
+
+		make
+		./Trie
+
+a seguir basta digitar a palavra desejada e apertar ENTER e será impresso na tela todas as maiores substrings palindromas.
+
+A string a ser digitada deve conter no máximo 7500 caracteres, nos testes que eu fiz com mais caracteres que 7500 dava erro (bad_alloc)
+não sei se estourava memória ou outra coisa , não conheço esse erro.
+Os caracteres podem ser tanto maiúsculos como minúsculos mas a saída gerará sempre palavras com letras maiúsculas.
+O programa só aceita os caracteres do alfabeto de 'a' a 'z' e caso o caracter '$' for passado no meio da palavra a saída conterá erro porque será
+verificado qual o maior palindromo entre a palavra antes do '$' e a que vem depois invertida, por exemplo:
+	Caso entre a palavra
+
+			agtaat$taatgatc
+
+	ele vai procurar a maior palindroma entre agtaat e ctagtaat.
